@@ -129,14 +129,15 @@ img {
  ************************************************/
 
  @media screen and (max-width: 480px) {
-    .container{display: flex;}
-    .row{ flex-direction: column;
-          flex-wrap: wrap;
-          align-items: center;  
-        }
-    .why-us{ background-color: black;}
+    .row{ flex-direction: column;}
+    .why-us{ background-color: black; 
+             padding-top: 50px;}
+    .lessons .col, .steps .col, .why-us .col-left, .why-us .col-right{
+        width: 100%;
+        margin-bottom: 50px;
+    }         
  }
 
  @media screen and ( max-width: 768px) {
-
+    .container{max-width: 100vw;}
  }
